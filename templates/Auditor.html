@@ -1,0 +1,36 @@
+{% extends 'home.html' %}
+
+
+{% block content %}
+<br>
+<br>
+<br>
+<style>
+    li {display : inline-block ;}
+</style>
+<h1>Welcome Auditor !</h1>
+<br>
+<h4>Storage section</h4>
+<ul>
+<li><a class="nav-link" href="/storage"><button type="button" class="btn btn-secondary">STORE METADATA HASH IN BLOCKCHAIN</button></a></li>
+
+<li><a class="nav-link" href="/addfile"><button type="button" class="btn btn-secondary">IPFS ADD FILE</button></a></li>
+</ul>
+<br>
+<br>
+<br>
+
+<h4>Validation Section</h4>
+<form action="/retrieve" method="POST"> 
+    {% csrf_token %}
+    <input type="text" name="quantity" placeholder="Repeat" size=50>
+    <input type="submit" value="RETRIEVE BLOCKCHAIN HASH">
+</form>
+
+<form action="/ipfsdata" method="POST"> 
+    {% csrf_token %}
+    <input type="text" name="hash_addr" placeholder="Repeat" size=50>
+    <input type="submit" value="RETRIEVE IPFS DATA">
+</form>
+<li><a class="nav-link" href="/valid"><button type="button" class="btn btn-secondary">VALIDATE</button></a></li>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'home.html' %}
+
+{% block content %}
+<br>
+<br>
+<br>
+
+<h3>Welcome {{user}}</h3>
+
+<!-- <form action="file" method="POST">
+    {% csrf_token %}
+    <input type="File" name="file" >
+    <input type="submit">
+</form>
+<form action="your_files" method="GET">
+    <input type="submit" value ="Your Files"> 
+    <button id ="btnSubmit" class="btn btn-primary" data-toggle="modal" data-target="#demoModal">Upload</button>
+</form> -->
+<style>
+    .form-control{
+        width : 45%;
+    }
+
+    .btn{
+        margin-top: 20px;
+        margin-left: 40px;
+        font-size: 20px;
+    }
+    
+</style>
+<div class="fluid-container">
+    <form action="file" method="POST">
+    {% csrf_token %}
+        <label for="formFileLg" class="form-label">Select a File to upload</label>
+        <input class="form-control form-control-lg" id="formFileLg" type="file" name="file">
+        <button id ="btnSubmit" class="btn btn-primary" data-toggle="modal" data-target="#demoModal">Upload</button>
+    </form>
+</div>
+<div class="modal fade" id="demoModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Upload Status!</h2>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Successfully Uploaded!</p>
+            </div>
+        </div>
+    </div>
+</div>    
+
+{% endblock %}

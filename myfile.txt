@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<ocs>
+ <meta>
+  <status>ok</status>
+  <statuscode>100</statuscode>
+  <message/>
+ </meta>
+ <data>
+  <element>
+   <id>196</id>
+   <subject>You created testdir/9.txt</subject>
+   <message></message>
+   <file>/testdir/9.txt</file>
+   <link>http://192.168.43.204/owncloud/index.php/apps/files/?dir=/testdir</link>
+   <date>2021-02-20T09:24:16+00:00</date>
+  </element>
+  <element>
+   <id>195</id>
+   <subject>You deleted testdir/8.txt, testdir/10.txt and testdir/6.txt</subject>
+   <message></message>
+   <file>/testdir/8.txt</file>
+   <link>http://192.168.43.204/owncloud/index.php/apps/files/?dir=/testdir</link>
+   <date>2021-02-20T09:23:38+00:00</date>
+  </element>
+  <element>
+   <id>192</id>
+   <subject>You created testdir/1.txt, testdir/2.txt, testdir/3.txt, testdir/4.txt, testdir/5.txt and testdir/6.txt</subject>
+   <message></message>
+   <file>/testdir/1.txt</file>
+   <link>http://192.168.43.204/owncloud/index.php/apps/files/?dir=/testdir</link>
+   <date>2021-02-20T09:23:07+00:00</date>
+  </element>
+  <element>
+   <id>186</id>
+   <subject>You created testdir/7.txt and testdir/8.txt</subject>
+   <message></message>
+   <file>/testdir/7.txt</file>
+   <link>http://192.168.43.204/owncloud/index.php/apps/files/?dir=/testdir</link>
+   <date>2021-02-20T09:23:03+00:00</date>
+  </element>
+  <element>
+   <id>184</id>
+   <subject>You deleted testdir/6.txt</subject>
+   <message></message>
+   <file>/testdir/6.txt</file>
+   <link>http://192.168.43.204/owncloud/index.php/apps/files/?dir=/testdir</link>
+   <date>2021-02-20T09:21:46+00:00</date>
+  </element>
+  <element>
+   <id>183</id>
+   <subject>You created testdir/10.txt, testdir/6.txt and testdir</subject>
+   <message></message>
+   <file>/testdir/10.txt</file>
+   <link>http://192.168.43.204/owncloud/index.php/apps/files/?dir=/testdir</link>
+   <date>2021-02-19T18:21:39+00:00</date>
+  </element>
+  <element>
+   <id>179</id>
+   <subject>You deleted testdir, testdir/13.txt, testdir/10.txt, testdir/6.txt, testdir/3.txt and testdir/4.txt</subject>
+   <message></message>
+   <file>/testdir</file>
+   <link>http://192.168.43.204/owncloud/index.php/apps/files/?dir=/</link>
+   <date>2021-02-19T18:17:58+00:00</date>
+  </element>
+  <element>
+   <id>173</id>
+   <subject>You deleted testdir/5.txt, testdir/1.txt, testdir/7.txt, testdir/8.txt, testdir/9.txt and testdir/2.txt</subject>
+   <message></message>
+   <file>/testdir/5.txt</file>
+   <link>http://192.168.43.204/owncloud/index.php/apps/files/?dir=/testdir</link>
+   <date>2021-02-19T17:52:08+00:00</date>
+  </element>
+  <element>
+   <id>167</id>
+   <subject>You created testdir/1.txt and testdir/2.txt</subject>
+   <message></message>
+   <file>/testdir/1.txt</file>
+   <link>http://192.168.43.204/owncloud/index.php/apps/files/?dir=/testdir</link>
+   <date>2021-02-19T17:51:17+00:00</date>
+  </element>
+ </data>
+</ocs>

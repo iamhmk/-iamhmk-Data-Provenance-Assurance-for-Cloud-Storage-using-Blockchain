@@ -1,0 +1,47 @@
+{% extends 'home.html' %}
+
+{% block content %}
+<br>
+<br>
+<br>
+{% for i in filename %}
+
+<h3>{{i.task}} <a href="/deletetask/{{i.id}}" class="btn btn-danger">DELETE</a></h3>  
+<br>
+
+{% endfor %}
+ 
+<form class="form-inline" action="/download" method="GET">
+    {% csrf_token %}
+
+    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Select a File</label>
+    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="f">
+      <option selected>Choose...</option>
+      {% for i in filename %}
+      <option>{{i.task}}</option>
+      {% endfor %}
+    </select>
+    <!-- <button onclick="popUp()" id="pop">Download</button> -->
+    <button id ="btnSubmit" class="btn btn-primary" data-toggle="modal" data-target="#demoModal">Download</button>
+    <!-- <button type="submit" class="btn btn-primary my-1">Download</button> -->
+    <!-- new code --> 
+    <div class="modal fade" id="demoModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Download Status!</h2>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Successfully downloaded!</p>
+                </div>
+            </div>
+        </div>
+    </div>                                                                              
+  </form>
+  
+  
+
+{% endblock %}

@@ -1,0 +1,17 @@
+<html>
+    <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+    {% for i in list %}
+        <li>{{i}}</li>
+    {% endfor %}
+
+    <form action="/testdelete" method="POST">
+      {% csrf_token %}
+      <input type="text" name="filename" class="form-control" placeholder="filename" />
+      <input type="submit" >
+    </form>
+
+    
+    </body>
+</html>

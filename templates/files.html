@@ -1,0 +1,19 @@
+{% extends 'home.html' %}
+
+{% block content %}
+<br>
+<br>
+<br>
+<h2>Welcome {{filename}}</h2>
+<form action="/upload_files">
+<button class="btn btn-outline-success btn-lg float-left " type="submit"  value="login" style="margin: 18px ;"> Your Files
+</button>
+</form>
+<form action="/upload_Files">
+<button class="btn btn-outline-success btn-lg float-right " type="submit"  value="login" style="margin-right: 900px ;margin-top:19px"> UPLOAD FILE
+</button>
+</form>
+
+
+
+{% endblock %}
